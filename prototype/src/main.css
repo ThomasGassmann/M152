@@ -12,17 +12,6 @@ html {
     flex-direction: row;
 }
 
-.content {
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    background-color: white;
-}
-
-.content-container {
-    padding: 10px;
-}
-
 .carousel-caption {
     background-color: rgba(33, 33, 33, 0.712);
 }
