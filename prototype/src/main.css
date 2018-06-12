@@ -1,7 +1,14 @@
 html {
     font-family: 'Roboto', sans-serif;
+    background-color: grey;
 }
 
 .navbar-icon {
     margin-right: 10px;
 }
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
