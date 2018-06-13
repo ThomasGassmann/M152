@@ -1,6 +1,5 @@
 html {
     font-family: 'Roboto', sans-serif;
-    background-color: grey;
 }
 
 .navbar-icon {
@@ -14,4 +13,27 @@ html {
 
 .carousel-caption {
     background-color: rgba(33, 33, 33, 0.712);
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .signup-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.signup-input-group {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.signup-image {
+    margin: 10px;
 }
