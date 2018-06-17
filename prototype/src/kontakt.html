@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Games</title>
+    <title>Anmeldung</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -22,19 +22,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Start</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Teams</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Games</a>
-                    <span class="sr-only">(current)</span>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="anmeldung.html">
                         Anmeldung
+                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -45,16 +45,40 @@
     </nav>
 
     <br /><div class="container w-75">
-        <h1>Games</h1>
+        <h1>Contact us!</h1>
         <div class="card">
-            <div class="card-img-top embed-responsive embed-responsive-16by9">
-                <!--<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/_g7y1vWkcNM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-                <!--<iframe id="gameIframed" class="embed-responsive-item" src="http://emea.iframed.cn.dmti.cloud/content/448/game/hero-time/uk/b10_herotime-en-21102016/index.html" width="940" height="580"></iframe>-->
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Ben 10 - Hero Time</h4>
-              <p class="card-text">Billy Billions has stolen the Rustbucket! Help Ben to use the power of the Omnitrix to jump, run and smash in this exciting platform adventure!</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="signup-content">
+                <img class="signup-image" height="300px" width="300px" src="icon.png" alt="Icon">
+                <div class="card-body">
+                    <div class="signup-input-group form-group">
+                        <h5 class="card-title signup-input-group-title">Informationen</h5>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" class="form-control" id="vorname" placeholder="Vorname">
+                        <label for="nachname">Nachname</label>
+                        <input type="text" class="form-control" id="nachname" placeholder="Nachname">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="signup-input-group form-group">
+                        <h5 class="card-title signup-input-group-title">Spieler</h5>
+
+                        <label for="spieler1">Spieler 1</label>
+                        <input type="text" class="form-control" id="spieler1" placeholder="Spieler 1">
+                        <label for="spieler2">Spieler 2</label>
+                        <input type="text" class="form-control" id="spieler2" placeholder="Spieler 2">
+                        <br />
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="btn btn-secondary col-12" style="width:100%">Spieler hinzufügen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="btn btn-primary col-12" style="width:100%">Anmelden</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

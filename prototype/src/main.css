@@ -32,8 +32,13 @@ html {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    width: 100%;
 }
 
 .signup-image {
     margin: 10px;
+}
+
+.main-content {
+    width: 100%;
 }
