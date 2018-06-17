@@ -4,11 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { TeamListComponent } from './team-list/team-list.component';
+import { GameListComponent } from './game-list/game-list.component';
+import { ContactComponent } from './contact/contact.component';
+import { GameDetailComponent } from './game-detail/game-detail.component';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SignUpComponent,
+    TeamListComponent,
+    GameListComponent,
+    ContactComponent,
+    GameDetailComponent,
+    TeamDetailComponent
   ],
   imports: [
     BrowserModule,
