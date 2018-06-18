@@ -46,6 +46,14 @@ html {
     #map-title {
         display: inline-block;
     }
+
+    .teams-bottom {
+        order: 0;
+    }
+
+    .teams-top {
+        order: 1;
+    }
 }
 
 .signup-input-group {
@@ -70,4 +78,42 @@ html {
 
 input, textarea, select, button {
     margin: 5px;
+}
+
+.card-img-bottom-team {
+    color: #fff;
+    height: 20rem;
+    background: url(https://images0.minutemediacdn.com/production/912x516/58a33600a51a91605e000001.jpeg) center no-repeat;
+    background-size: cover;
+  }
+
+  .card-img-bottom-team {
+    color: #fff;
+    height: 20rem;
+    background-size: cover;
+  }
+
+.card-block {
+    padding: 10px;
+}
+
+section {
+    margin: 10px;
+}
+
+section .card {
+    padding: 10px;
+}
+
+
+
+.row-team-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-game-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
