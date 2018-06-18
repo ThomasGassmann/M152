@@ -11,6 +11,7 @@ import { GameListComponent } from './game-list/game-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
+import { ContentCardComponent } from './content-card/content-card.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { TeamDetailComponent } from './team-detail/team-detail.component';
     GameListComponent,
     ContactComponent,
     GameDetailComponent,
-    TeamDetailComponent
+    TeamDetailComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,
