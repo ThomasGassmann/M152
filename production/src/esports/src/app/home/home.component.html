@@ -1,0 +1,31 @@
+<app-content-card title="">
+    <div class="container text-center">
+            <h2 class="display-5">2
+                <small class="text-muted">Tage</small> 5
+                <small class="text-muted">Stunden</small> 4
+                <small class="text-muted">Minuten</small>
+            </h2>
+    </div>
+    <carousel>
+        <slide *ngFor="let team of teams">
+            <a [routerLink]="['/teams/details']">
+                <img [src]="team.img" alt="{{ team.title }}" style="display: block; width: 100%;">
+                <div class="carousel-caption">
+                <h3>{{ team.title }}</h3>
+                <p class="d-none d-md-block">{{ team.caption }}</p>
+                </div>
+            </a>
+        </slide>
+    </carousel>
+    <carousel>
+        <slide *ngFor="let game of games">
+            <a [routerLink]="['/games/details']">
+                <img [src]="game.img" alt="{{ game.title }}" style="display: block; width: 100%;">
+                <div class="carousel-caption">
+                <h3>{{ game.title }}</h3>
+                <p class="d-none d-md-block">{{ game.caption }}</p>
+                </div>
+            </a>
+        </slide>
+    </carousel>     
+</app-content-card>

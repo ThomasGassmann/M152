@@ -26,10 +26,10 @@
                     <a class="nav-link" href="index.html">Start</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Teams</a>
+                    <a class="nav-link" href="teams.html">Teams</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Games</a>
+                    <a class="nav-link" href="games.html">Games</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="anmeldung.html">
@@ -38,20 +38,42 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontakt</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <br />
     <div class="container w-75">
         <h1>Anmeldung</h1>
         <div class="card">
-            <img class="card-img-top" src="icon.png" alt="Icon">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="signup-content">
+                <img class="signup-image" height="300px" width="300px" src="icon.png" alt="Icon">
+                <div class="card-body main-content">
+                    <div class="signup-input-group form-group">
+                        <h5 class="card-title signup-input-group-title">Informationen</h5>
+                        <input type="text" class="form-control" id="vorname" placeholder="Vorname">
+                        <input type="text" class="form-control" id="nachname" placeholder="Nachname">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="signup-input-group form-group">
+                        <h5 class="card-title signup-input-group-title">Spieler</h5>
+
+                        <input type="text" class="form-control" id="spieler1" placeholder="Spieler 1">
+                        <input type="text" class="form-control" id="spieler2" placeholder="Spieler 2">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="btn btn-secondary col-12" style="width:100%">Spieler hinzufügen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="btn btn-primary col-12" style="width:100%">Anmelden</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
