@@ -1,11 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-<<<<<<< HEAD
-=======
 import { CarouselModule } from 'ngx-bootstrap';
 
->>>>>>> d9cbe6b60ddf48f2e2f0a1be1aa15ac90cc18411
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
