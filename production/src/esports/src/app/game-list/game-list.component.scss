@@ -1,0 +1,25 @@
+section {
+    margin: 1em;
+}
+
+section .container .card {
+    padding: 1em;
+}
+
+section .container {
+    position: relative;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.game-container {
+    padding: 1em;
+}
+
+video {
+    max-width: 100%;
+}

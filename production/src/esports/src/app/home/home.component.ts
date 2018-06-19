@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,29 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  private _teams = [
-    {
-      img: '/assets/reds.png',
-      title: 'Helsinki REDS',
-      caption: 'Helsinki, Finnland'
-    }, {
-      img: '/assets/renegades.png',
-      title: 'Detroit Renegades',
-      caption: 'Detroit, USA'
-    }];
+  private _teams: any[];
 
-  private _games = [
-    {
-      img: '/assets/ben10.png',
-      title: 'Ben 10 Hero Time',
-      caption: 'A game!'
-    }, {
-      img: '/assets/mc.png',
-      title: 'Minecraft',
-      caption: 'Another game!'
-    }];
+  private _games: any[];
 
-  constructor() { }
+  constructor(dataService: DataService) {
+    this._teams = dataService.getTeams();
+    this._games = dataService.getGames();
+  }
 
   public get games(): any[] {
     return this._games;

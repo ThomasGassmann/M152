@@ -1,2 +1,20 @@
-<app-content-card title="Teams">
+<app-content-card title="Teams" cardless="true">
+    <section *ngFor="let team of teams">
+        <div class="container">
+            <div class="card">
+                <div class="row team-container">
+                    <div class="col-md-6">
+                        <img class="team-card-image" src="{{ team.img }}" alt="{{ team.title }}" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-block">
+                            <h4 class="card-title">{{ team.title }}</h4>
+                            <p class="card-text">{{ team.description }}</p>
+                            <a [routerLink]="['/teams/details']" class="btn btn-primary float-right read-more">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </app-content-card>

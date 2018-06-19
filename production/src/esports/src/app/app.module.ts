@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
 import { ContentCardComponent } from './content-card/content-card.component';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { ContentCardComponent } from './content-card/content-card.component';
     AppRoutingModule,
     CarouselModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

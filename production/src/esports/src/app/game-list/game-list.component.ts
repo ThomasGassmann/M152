@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-game-list',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameListComponent implements OnInit {
 
-  constructor() { }
+  private _games: any[];
 
-  ngOnInit() {
+  constructor(private _dataService: DataService) { }
+
+  public ngOnInit() {
+    this._games = this._dataService.getGames();
+  }
+
+  public get games(): any[] {
+    return this._games;
   }
 
 }

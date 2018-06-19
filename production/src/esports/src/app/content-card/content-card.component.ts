@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContentCardComponent implements OnInit {
   private _title: string;
+  private _cardless: boolean = false;
 
   constructor() { }
 
@@ -18,8 +19,17 @@ export class ContentCardComponent implements OnInit {
     this._title = value;
   }
 
+  @Input()
+  public set cardless(value: boolean) {
+    this._cardless = value;
+  }
+
   public get title(): string {
     return this._title;
+  }
+
+  public get cardless(): boolean {
+    return this._cardless;
   }
 
 }

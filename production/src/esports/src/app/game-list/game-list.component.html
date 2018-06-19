@@ -1,2 +1,24 @@
-<app-content-card title="Games">
+<app-content-card title="Games" cardless="true">
+    <section *ngFor="let game of games">
+        <div class="container">
+            <div class="card">
+                <div class="row game-container">
+                    <div class="col-md-6">
+                        <video controls>
+                            <source src="{{ game.video }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                            <track *ngFor="let track of game.subtitles" kind="subtitles" srclang="{{ track.srclang }}" src="{{ track.src }}" default>
+                        </video>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-block">
+                            <h4 class="card-title">{{ game.title }}</h4>
+                            <p class="card-text">{{ game.description }}</p>
+                            <a [routerLink]="['/games/details']" class="btn btn-primary float-right read-more">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </app-content-card>

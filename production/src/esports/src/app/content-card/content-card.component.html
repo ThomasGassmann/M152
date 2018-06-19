@@ -2,7 +2,7 @@
 <div class="container main-container">
   <h1>{{title}}</h1>
 
-  <div class="card">
+  <div [ngClass]="cardless ? '' : 'card'">
     <ng-content></ng-content>
   </div>
 </div>
