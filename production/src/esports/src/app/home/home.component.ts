@@ -1,36 +1,42 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  teams = [
+  private _teams = [
     {
-      img: 'http://www.esportsinsider.com/wp-content/uploads/2016/11/HelsinkiREDS-1.jpg',
-      title:'Helsinki REDS',
-      caption:'Helsinki, Finnland'
-    }, {
-      img: 'http://www.esportsinsider.com/wp-content/uploads/2016/11/HelsinkiREDS-1.jpg',
-      title:'Helsinki REDS',
-      caption:'Helsinki, Finnland'
-    }];
-  games = [
-    {
-      img: 'https://tbsila.cdn.turner.com/toonla/images/cnapac/picker/item/gpfm---ben-10---hero-time---704x384/au/ben10-herotime-websitegpfm-704x384.jpg',
-      title: 'Ben 10 Hero Time',
-      caption: 'Helsinki, Finnland'
-    }, {
-      img: 'http://www.esportsinsider.com/wp-content/uploads/2016/11/HelsinkiREDS-1.jpg',
+      img: '/assets/reds.png',
       title: 'Helsinki REDS',
       caption: 'Helsinki, Finnland'
+    }, {
+      img: '/assets/renegades.png',
+      title: 'Detroit Renegades',
+      caption: 'Detroit, USA'
+    }];
+
+  private _games = [
+    {
+      img: '/assets/ben10.png',
+      title: 'Ben 10 Hero Time',
+      caption: 'A game!'
+    }, {
+      img: '/assets/mc.png',
+      title: 'Minecraft',
+      caption: 'Another game!'
     }];
 
   constructor() { }
 
-  ngOnInit() {
+  public get games(): any[] {
+    return this._games;
+  }
+
+  public get teams(): any[] {
+    return this._teams;
   }
 
 }

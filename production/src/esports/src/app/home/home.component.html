@@ -1,31 +1,42 @@
 <app-content-card title="">
     <div class="container text-center">
-            <h2 class="display-5">2
-                <small class="text-muted">Tage</small> 5
-                <small class="text-muted">Stunden</small> 4
-                <small class="text-muted">Minuten</small>
-            </h2>
+        <h2 class="display-5">2
+            <small class="text-muted">Tage</small> 5
+            <small class="text-muted">Stunden</small> 4
+            <small class="text-muted">Minuten</small>
+        </h2>
+    </div>
+    <div class="container text-center">
+        Listen to our podcast!
+        <br />
+        <audio controls>
+            <source src="/assets/audio/audio.ogg" type="audio/ogg" />
+            <source src="/assets/audio/audio.aac" type="audio/aac" />
+            <source src="/assets/audio/audio.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+        </audio>
     </div>
     <carousel>
         <slide *ngFor="let team of teams">
             <a [routerLink]="['/teams/details']">
-                <img [src]="team.img" alt="{{ team.title }}" style="display: block; width: 100%;">
+                <img [src]="team.img" alt="{{ team.title }}" class="detail-image">
                 <div class="carousel-caption">
-                <h3>{{ team.title }}</h3>
-                <p class="d-none d-md-block">{{ team.caption }}</p>
+                    <h3>{{ team.title }}</h3>
+                    <p class="d-none d-md-block">{{ team.caption }}</p>
                 </div>
             </a>
         </slide>
     </carousel>
+    <br />
     <carousel>
         <slide *ngFor="let game of games">
             <a [routerLink]="['/games/details']">
-                <img [src]="game.img" alt="{{ game.title }}" style="display: block; width: 100%;">
+                <img [src]="game.img" alt="{{ game.title }}" class="detail-image">
                 <div class="carousel-caption">
-                <h3>{{ game.title }}</h3>
-                <p class="d-none d-md-block">{{ game.caption }}</p>
+                    <h3>{{ game.title }}</h3>
+                    <p class="d-none d-md-block">{{ game.caption }}</p>
                 </div>
             </a>
         </slide>
-    </carousel>     
+    </carousel>
 </app-content-card>
