@@ -14,7 +14,10 @@
           <track *ngFor="let track of game.subtitles" kind="subtitles" srclang="{{ track.srclang }}" src="{{ track.src }}" default>
       </video>
       <ul class="list-group">
-        <li *ngFor="let team of teams" class="list-group-item">{{team.title}}</li>
+        <li *ngFor="let team of teams" class="list-group-item">
+          <img src="/assets/logo.svg">
+          {{team.title}}
+        </li>
       </ul>
     </div>
   </div>
