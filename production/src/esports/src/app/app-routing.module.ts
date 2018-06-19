@@ -30,11 +30,11 @@ const routes: Routes = [
       component: SignUpComponent
   },
   {
-      path: 'games/:id',
+      path: 'games/details',
       component: GameDetailComponent
   },
   {
-      path: 'teams/:id',
+      path: 'teams/details',
       component: TeamDetailComponent
   },
   {

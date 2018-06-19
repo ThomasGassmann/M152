@@ -1,3 +1,14 @@
-@import "~bootstrap/scss/bootstrap";
+$theme-colors: (
+  "primary": #E64A19,
+  "danger": #FFCCBC,
+  "secondary": #FF5722
+);
 
-// Overwrite bootstrap variables here
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+$body-bg: #000;
+$body-color: #111;
+
+@import "~bootstrap/scss/bootstrap";

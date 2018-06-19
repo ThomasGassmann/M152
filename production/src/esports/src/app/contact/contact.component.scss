@@ -1,0 +1,48 @@
+.contact-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-content-container {
+    display: flex;
+}
+
+iframe {
+    border: 0;
+}
+
+.contact-sub {
+    width: 50%;
+    padding: 10px;
+}
+
+#map-title {
+    display: none;
+}
+
+input, textarea, button, a {
+  margin: 0 1em 1em 0;
+}
+
+button {
+    margin: 1em 1em 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content-container {
+        flex-direction: column;
+    }
+
+    .contact-sub {
+        width: 100% !important;
+    }
+    
+    #map-title {
+        display: inline-block;
+    }
+}
