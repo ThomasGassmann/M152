@@ -1,3 +1,21 @@
-<p>
-  game-detail works!
-</p>
+<app-content-card title="{{game.title}}">
+  <div class="row row-game-detail">
+    <div class="col-md-6">
+      <div class="card-block">
+        <h5>2017-01-01</h5>
+        <span *ngFor="let tag of game.tags" class="badge badge-pill badge-primary">{{tag}}</span>
+        <p class="card-text">{{game.description}}</p>
+      </div>
+    </div>
+    <div class="col-md-6 bottom-content">
+      <video class="game-video" controls>
+          <source src="{{ game.video }}" type="video/mp4">
+          Your browser does not support the video tag.
+          <track *ngFor="let track of game.subtitles" kind="subtitles" srclang="{{ track.srclang }}" src="{{ track.src }}" default>
+      </video>
+      <ul class="list-group">
+        <li *ngFor="let team of teams" class="list-group-item">{{team.title}}</li>
+      </ul>
+    </div>
+  </div>
+</app-content-card>

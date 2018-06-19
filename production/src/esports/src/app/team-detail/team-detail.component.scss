@@ -1,0 +1,16 @@
+.row-team-detail {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .teams-bottom {
+        order: 0;
+    }
+
+    .teams-top {
+        order: 1;
+        margin-top: 1em;
+    }
+}

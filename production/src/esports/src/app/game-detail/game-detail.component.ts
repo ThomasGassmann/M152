@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-game-detail',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameDetailComponent implements OnInit {
 
-  constructor() { }
+  private _game: any;
+  private _teams: any[];
 
-  ngOnInit() {
+  constructor(private _dataService: DataService) { }
+
+  public ngOnInit() {
+    this._game = this._dataService.getGames()[0];
+    this._teams = this._dataService.getTeams();
+  }
+
+  public get game(): any {
+    return this._game;
+  }
+
+  public get teams(): any[] {
+    return this._teams;
   }
 
 }

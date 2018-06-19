@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-team-detail',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamDetailComponent implements OnInit {
 
-  constructor() { }
+  private _team: any;
 
-  ngOnInit() {
+  constructor(private _dataService: DataService) { }
+
+  public ngOnInit() {
+    this._team = this._dataService.getTeams()[0];
+  }
+
+  public get team(): any {
+    return this._team;
   }
 
 }

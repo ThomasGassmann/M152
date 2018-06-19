@@ -1,3 +1,18 @@
-<p>
-  team-detail works!
-</p>
+<app-content-card title="{{team.title}}">
+    <div class="row row-team-detail">
+        <div class="col-md-6 teams-top">
+            <div class="card-block">
+                <h5>2017-01-01</h5>
+                <p class="card-text">{{team.description}}</p>
+            </div>
+        </div>
+        <div class="col-md-6 teams-bottom">
+            <div class="card-img-bottom-team-detail">
+                <img class="card-img-top" src="{{team.img}}" />
+                <ul class="list-group">
+                    <li *ngFor="let member of team.members" class="list-group-item">{{member}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</app-content-card>

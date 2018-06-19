@@ -1,0 +1,15 @@
+.game-video {
+    max-width: 100%;
+}
+
+.row-game-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-content {
+        margin-top: 1em;
+    }
+}
