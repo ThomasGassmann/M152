@@ -402,39 +402,39 @@ var DataService = /** @class */ (function () {
     DataService.prototype.getGames = function () {
         return [
             {
-                img: '/assets/ben10.png',
+                img: '/M152/production/dist/assets/ben10.png',
                 title: 'Ben 10 Hero Time',
                 caption: 'A game!',
                 tags: ['Foo', 'Bar', 'Stuff'],
                 description: 'Billy Billions has stolen the Rustbucket! Help Ben to use the power of the Omnitrix to jump, run and smash in this exciting platform adventure',
-                video: '/assets/video/video.mp4',
+                video: '/M152/production/dist/assets/video/video.mp4',
                 subtitles: [
                     {
-                        src: '/assets/video/subtitles/english.vtt',
+                        src: '/M152/production/dist/assets/video/subtitles/english.vtt',
                         label: 'English',
                         srclang: 'en'
                     },
                     {
-                        src: '/assets/video/subtitles/german.vtt',
+                        src: '/M152/production/dist/assets/video/subtitles/german.vtt',
                         label: 'Deutsch',
                         srclang: 'de'
                     }
                 ]
             }, {
-                img: '/assets/mc.png',
+                img: '/M152/production/dist/assets/mc.png',
                 title: 'Minecraft',
                 caption: 'Another game!',
                 tags: ['DoesThings', 'Interesting', 'Shooter'],
                 description: 'Foo... Bar.',
-                video: '/assets/video/video.mp4',
+                video: '/M152/production/dist/assets/video/video.mp4',
                 subtitles: [
                     {
-                        src: '/assets/video/subtitles/english.vtt',
+                        src: '/M152/production/dist/assets/video/subtitles/english.vtt',
                         label: 'English',
                         srclang: 'en'
                     },
                     {
-                        src: '/assets/video/subtitles/german.vtt',
+                        src: '/M152/production/dist/assets/video/subtitles/german.vtt',
                         label: 'Deutsch',
                         srclang: 'de'
                     }
@@ -445,7 +445,7 @@ var DataService = /** @class */ (function () {
     DataService.prototype.getTeams = function () {
         return [
             {
-                img: '/assets/reds.png',
+                img: '/M152/production/dist/assets/reds.png',
                 title: 'Helsinki REDS',
                 caption: 'Helsinki, Finnland',
                 members: [
@@ -455,7 +455,7 @@ var DataService = /** @class */ (function () {
                 ],
                 description: 'The original Helsinki REDS Overwatch team was assembled by team manager Christer Kasurinen and the first team captain Roope “Ruape” Kurkela. During the fall of 2016, they gathered a tight-knit group of players committed to working hard and growing together to become a team that is competitive in Overwatch on an international level. In the fall of 2017, the Helsinki REDS announced an expansion into Dota 2 with our first roster for the game.'
             }, {
-                img: '/assets/renegades.png',
+                img: '/M152/production/dist/assets/renegades.png',
                 title: 'Detroit Renegades',
                 caption: 'Detroit, USA',
                 members: [
